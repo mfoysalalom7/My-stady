@@ -1,0 +1,6 @@
+{
+  "name": "HabitPulse",
+  "description": "A motivating habit tracker with daily check-offs, interactive streak calendar, completion stats, color coding, and local persistence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
