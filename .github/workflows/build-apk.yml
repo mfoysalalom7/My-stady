@@ -1,4 +1,5 @@
 
+
 name: Build Android APK
 
 on:
@@ -20,11 +21,11 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v6
+        with:
+          gradle-version: '9.3.1'
 
       - name: Build Debug APK
-        run: |
-          chmod +x gradlew
-          ./gradlew :app:assembleDebug
+        run: gradle :app:assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
